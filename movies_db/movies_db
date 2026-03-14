@@ -1,0 +1,10 @@
+{
+    "toy story": {
+        "genre": "adventure",
+        "director": "Abraham",
+        "release_date": "2026-07-01",
+        "actors": [
+            "user1,user2,user3"
+        ]
+    }
+}

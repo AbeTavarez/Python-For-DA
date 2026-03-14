@@ -1,0 +1,5 @@
+__pycache__
+.env
+.myenv/
+.venv/
+advanced_data_pipeline/
