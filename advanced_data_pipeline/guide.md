@@ -27,13 +27,16 @@
 
  - **Setup:**
    1. **Upload Olist CSVs** to a folder in Google Drive.
-   2. **Install libraries:** !pip install pymysql sqlalchemy.
+   2. **Install libraries:** `!pip install pymysql sqlalchemy`.
    3. **Mount Drive** in your notebook:
     ```python
     from google.colab import drive
     drive.mount('/content/drive')
     ```
-    **Help:** https://colab.research.google.com/drive/1YppUP29n7S7w5rZahQeOCE2WVvTCdqys#scrollTo=zjlHdA7LgUcg
+    **Help:** 
+     - https://colab.research.google.com/drive/1YppUP29n7S7w5rZahQeOCE2WVvTCdqys#scrollTo=zjlHdA7LgUcg
+
+     - https://docs.google.com/document/d/19VflEPy47IhdsV_fymFTwWmMMjNXPdjE4t7FES-RkZw/edit?tab=t.0
    
 
 ## Phase 2: Data Cleaning & Visual EDA
