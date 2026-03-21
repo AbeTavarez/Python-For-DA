@@ -41,7 +41,7 @@
 
 ## Phase 2: Data Cleaning & Visual EDA
 
-**You will primarily work with the `orders`, `order_items`, `products`, and `customers` datasets.**
+### You will primarily work with the `orders`, `order_items`, `products`, and `customers` datasets.
 
 **Goal:** Use Python to "fix" the data and Matplotlib to find hidden stories.
 
