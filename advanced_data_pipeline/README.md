@@ -11,7 +11,7 @@ You are a Lead Data Analyst at Olist, the largest department store marketplace i
 
  <hr/>
 
-**3. Phase 1: Environment & Schema Design (5 Hours)**
+**3. Phase 1: Environment & Schema Design**
 
  - **Download the Data:** Get the Olist Dataset from Kaggle.
 
@@ -27,7 +27,7 @@ You are a Lead Data Analyst at Olist, the largest department store marketplace i
  
  <hr/>
 
-**4. Phase 2: Python Cleaning & Matplotlib EDA (10 Hours)**
+**4. Phase 2: Python Cleaning & Matplotlib EDA**
 - **Data Cleaning:**
   - **Handle UTC Timestamps:** Convert all 5+ date columns (purchase, approved, delivered, etc.) into proper datetime objects.
   - **Price Validation:** Check for $0$ or negative prices in the items table.
@@ -40,26 +40,30 @@ You are a Lead Data Analyst at Olist, the largest department store marketplace i
  
  <hr/>
 
-**3. Phase 3: The MySQL ETL Engine (8 Hours)**
+**3. Phase 3: The MySQL ETL Engine**
  - **The Pipeline:** Write a Python script using SQLAlchemy to automate the data transfer.
 
  - **Schema Enforcement:** When using .to_sql(), ensure you define the correct data types for MySQL (e.g., VARCHAR(50) for IDs, DECIMAL(10,2) for prices).
 
  - **Data Integrity:** Verify that the number of unique customer_ids in Python matches the count in MySQL after the transfer.
 
+  > Note: See `phase3_etl_engine.md`
  <hr/>
 
-**4. Phase 4: Advanced SQL Audit (12 Hours)**
+**4. Phase 4: Advanced SQL Audit**
+Goal: Solve high-level business challenges using traditional relational logic (Subqueries and Joins).
+
 Solve these 4 Business Challenges in MySQL:
 
- **1. Shipping Delay Audit:** Calculate the average "Delivery Lag" (Actual minus Estimated) per state. Which 3 states are slowest?
+ **1. Shipping Delay Audit:** Identify which 3 states are the slowest to deliver compared to Olist's original promise.
 
- **2. Top Earners:** Use DENSE_RANK() to find the top 5 sellers by revenue in each product category.
+ **2. Top Earners:** Find the top 5 sellers by revenue for every product category.
 
- **3. Payment Preferences:** Use a CASE statement to categorize orders by payment type (Boleto vs. Credit Card) and find the average order value for each.
+ **3. Payment Preferences:** Group raw payment types into clean categories and find the average order value for each.
 
- **4. Customer Lifetime Value:** Use CTEs to find customers who have spent more than the average and have placed more than 2 orders.
+ **4. Customer Lifetime Value:** Identify "Power Users"—those who spent more than the average customer and shopped at least 3 times.
 
+  > Note: See `phase4_sql_audit.md` for instructions using traditional SQL Queries.
  <hr/>
 
 **5. Phase 5: Documentation & Portfolio Delivery (5 Hours)**
